@@ -1,0 +1,8 @@
+
+<div class="container" *ngFor="let question of questions">
+  <p><span (click)=onSelect(question.question_id)>{{question.title}}</span></p>
+   <p><span>View Count</span> {{question.view_count}}</p>
+  <p><span>Score</span> {{question.score}}</p>
+  <p><span>Tags</span> {{question.tags}}</p>
+</div>
+
